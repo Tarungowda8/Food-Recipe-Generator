@@ -8,7 +8,7 @@ const app = express();
 const PORT = process.env.PORT || 9998;
 
 app.use(cors({
-  origin: "http://localhost:5173"
+    origin: ["http://localhost:5173", "https://food-recipe-generator-beta.vercel.app"]
 }));
 
 app.use(express.json());
